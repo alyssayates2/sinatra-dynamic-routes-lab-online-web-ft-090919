@@ -20,8 +20,8 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
-    case operations 
-  when params[:operation] = add
+    case operations
+  when params[:operation] = "add"
     @addanswer = params[:num1].to_i + params[:num2].to_i
   	@addanswer.to_s
   when params[:operation] = "subtract"
