@@ -32,9 +32,7 @@ class App < Sinatra::Base
   when params[:operation] = "divide"
     @answer = params[:num1].to_i / params[:num2].to_i
     @answer.to_s
-  else
-    "Not sure what you want."
-  end
+    end
   end
 
 end
