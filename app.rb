@@ -34,6 +34,7 @@ class App < Sinatra::Base
     @answer.to_s
 
   end
+end
 end 
 
 end
