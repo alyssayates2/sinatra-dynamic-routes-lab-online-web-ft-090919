@@ -34,7 +34,7 @@ class App < Sinatra::Base
     @answer.to_s
   else
     "Not sure what you want."
-  
-end
+
+  end
 
 end
