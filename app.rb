@@ -20,7 +20,7 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
-    @answer = params[:num1].to_i + params[:num2].to_i
+    @answer = params[:number1].to_i + params[:number2].to_i
   	@answer.to_s
   end
 
