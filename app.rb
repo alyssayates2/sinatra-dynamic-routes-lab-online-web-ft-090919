@@ -19,4 +19,9 @@ class App < Sinatra::Base
     params[:word1] + (' ') + params[:word2] + (' ') + params[:word3] + (' ') + params[:word4] + (' ') + params[:word5] + ('.')
   end
 
+  get '/:operation/:number1/:number2' do
+    @answer = params[:num1].to_i + params[:num2].to_i
+  	@answer.to_s
+  end
+
 end
