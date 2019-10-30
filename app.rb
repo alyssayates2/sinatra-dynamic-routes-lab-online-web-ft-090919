@@ -24,7 +24,7 @@ class App < Sinatra::Base
     @answer = params[:num1].to_i + params[:num2].to_i
   	@answer.to_s
   when params[:operation] = "subtract"
-    @answer = params[:num1].to_i - params[:num2].to_i
+    @answer = params[:num2].to_i - params[:num1].to_i
     @answer.to_s
   when params[:operation] = "multiply"
     @answer = params[:num1].to_i * params[:num2].to_i
@@ -34,7 +34,7 @@ class App < Sinatra::Base
     @answer.to_s
   else
     "Not sure what you want."
-  end 
+  end
   end
 
 end
