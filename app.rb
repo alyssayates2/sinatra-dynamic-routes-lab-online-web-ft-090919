@@ -32,9 +32,7 @@ class App < Sinatra::Base
   else
     @answer = params[:num1].to_i * params[:num2].to_i
     @answer.to_s
-
   end
 end
-end 
 
 end
